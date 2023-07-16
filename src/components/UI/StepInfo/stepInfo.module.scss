@@ -1,0 +1,76 @@
+@import "styles/_unit.scss";
+
+.stepInfo {
+  background: #f3f7ff;
+  padding: rem(56) 0;
+
+  .stepInfo_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: rem(28);
+
+    .stepInfo_content_item {
+      .stepInfo_title {
+        display: flex;
+        align-items: center;
+        margin: 0 0 rem(12);
+
+        .stepInfo_dot {
+          width: rem(6);
+          height: rem(6);
+          border-radius: 50%;
+          background: #000;
+          margin: 0 rem(12) 0 0;
+        }
+
+        h3 {
+          font-family: "SF Pro Display";
+          font-weight: 600;
+          font-size: rem(22);
+          line-height: rem(26);
+          color: #1a2024;
+          white-space: nowrap;
+        }
+      }
+
+      .stepInfo_subtitle {
+        font-family: "SF Pro Display";
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: rem(22);
+        margin-left: rem(18);
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(992)) {
+    .stepInfo_content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    .stepInfo_content {
+      grid-template-columns: 1fr;
+
+      .stepInfo_content_item {
+        .stepInfo_title {
+          margin-bottom: rem(8);
+
+          h3 {
+            font-weight: 600;
+            font-size: rem(20);
+            line-height: rem(24);
+          }
+        }
+
+        .stepInfo_subtitle {
+          font-size: rem(16);
+          line-height: rem(22);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "styles/_unit.scss";
+
+.graduates {
+  padding: rem(60) 0;
+  width: 100%;
+
+  .graduates_content {
+    position: relative;
+
+    .graduates_content_item {
+      border-radius: rem(8);
+      overflow: hidden;
+
+      .graduates_content_img {
+        max-width: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .graduates_control_panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: url("../../../../public/images/graduates_layer.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: rem(16) rem(16) 0;
+
+        &:hover {
+          .graduates_play_btn {
+            display: block;
+          }
+        }
+
+        .graduates_play_btn {
+          width: rem(176);
+          height: rem(48);
+          background: #fff;
+          border-radius: rem(8);
+          text-transform: none;
+          display: none;
+          transition: 1.2s ease;
+
+          @media screen and (max-width: rem(576)) {
+            display: block;
+          }
+
+          span {
+            font-size: rem(17);
+            line-height: rem(22);
+            font-weight: 400;
+            font-family: "SF Pro Display";
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+
+        h3 {
+          font-size: rem(18);
+          line-height: rem(20);
+          font-weight: 500;
+          font-family: "Inter";
+          color: #fff;
+          position: absolute;
+          bottom: rem(24);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    .graduates_content {
+      .graduates_content_item {
+        .graduates_content_img {
+          max-width: 100%;
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedback_dialog {
+  width: rem(400);
+  height: rem(708);
+  border-radius: rem(8);
+  overflow: hidden;
+
+  .iframe {
+    border: none;
+  }
+
+  @media screen and (max-width: rem(576)) {
+    width: auto;
+    height: auto;
+    max-width: rem(576);
+    height: rem(585);
+  }
+}
+.close_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -100%;
+  width: rem(32);
+  height: rem(32);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+// Swiper Buttons
+.swiper_btns {
+  width: rem(40);
+  height: rem(40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  position: absolute;
+  top: 43%;
+  z-index: 2;
+  transform: translateY(-50%);
+
+  &.prev {
+    left: -16px;
+  }
+
+  &.next {
+    right: -16px;
+  }
+
+  @media screen and (max-width: rem(576)) {
+    &.prev {
+      left: 12px;
+    }
+  
+    &.next {
+      right: 12px;
+    }
+
+  }
+}

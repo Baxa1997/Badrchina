@@ -1,0 +1,248 @@
+@import "styles/_unit.scss";
+
+.teachers {
+  padding: rem(60) 0;
+  background: #f3f7ff;
+
+  &_content {
+    display: flex !important;
+    justify-content: space-between;
+    padding-right: rem(32);
+  }
+
+  &_left {
+    h2 {
+      font-family: "SF Pro Display";
+      font-size: rem(48);
+      font-weight: 700;
+      line-height: rem(56);
+      margin: rem(32) 0 rem(72);
+    }
+
+    h4,
+    p {
+      display: block;
+    }
+  }
+
+  &_right {
+    position: relative;
+    width: rem(471);
+    height: rem(528);
+    background-image: url("../../../../public/images/teachers_bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+
+    &_btns {
+      & > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: rem(194);
+        width: rem(52);
+        height: rem(52);
+        border: none;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.07);
+        z-index: 2;
+      }
+
+      &_pre {
+        transform: translateX(-50%);
+      }
+
+      &_next {
+        right: 0;
+        transform: translateX(50%);
+      }
+    }
+
+    &_img {
+      width: rem(471);
+      height: rem(528);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_context {
+    display: none;
+  }
+
+  &_name {
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: rem(29);
+    color: #1a2024;
+    margin-bottom: rem(12);
+  }
+
+  &_info {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5b6871;
+
+    span {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1b5bf7;
+      text-decoration: underline;
+    }
+  }
+
+  &_projects {
+    &_title {
+      display: block;
+      font-family: "SF Pro Display";
+      font-weight: 600;
+      font-size: rem(24);
+      line-height: rem(32);
+      color: #1a2024;
+      margin-bottom: rem(20);
+    }
+
+    &_container {
+      display: grid;
+      grid-template: repeat(2, rem(62)) / repeat(3, rem(162));
+      gap: rem(12) rem(24);
+      margin-bottom: rem(32);
+
+      &.active_two_columns {
+        grid-template-columns: repeat(2, rem(162));
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: rem(8);
+        overflow: hidden;
+        img {
+          display: block;
+          transform: scale(0.25);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(786)) {
+    padding: rem(32) 0;
+
+    &_content {
+      display: block !important;
+      padding: 0;
+    }
+
+    &_left {
+      h2 {
+        font-size: rem(40);
+        line-height: rem(48);
+        margin: 0 0 rem(32);
+        text-align: center;
+      }
+
+      p,
+      h4 {
+        display: none;
+      }
+    }
+
+    &_right {
+      margin-bottom: rem(16);
+    }
+
+    &_context {
+      display: block;
+      margin-bottom: rem(32);
+    }
+
+    &_name {
+      font-size: rem(24);
+      line-height: rem(30);
+      margin-bottom: rem(10);
+    }
+
+    &_info {
+      font-size: rem(18);
+      line-height: rem(26);
+      max-width: rem(320);
+      margin: 0;
+    }
+
+    &_projects {
+      &_title,
+      &_container {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    &_content {
+      padding: 0 rem(44);
+    }
+
+    &_right {
+      &_btns {
+        & > button {
+          width: rem(32);
+          height: rem(32);
+          bottom: rem(80);
+        }
+
+        &_pre {
+          left: rem(-22);
+        }
+
+        &_next {
+          right: rem(-22);
+        }
+      }
+    }
+
+    &_context.active {
+      margin: 0;
+    }
+
+    &_left {
+      h2 {
+        font-size: rem(24);
+        line-height: rem(35);
+        margin-bottom: rem(16);
+        text-align: left;
+      }
+    }
+
+    &_right {
+      width: 100%;
+      height: auto;
+
+      &_img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &_info {
+      font-size: rem(16);
+      line-height: rem(24);
+      max-width: 100%;
+    }
+
+    &_name {
+      font-size: rem(20);
+      line-height: rem(25);
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@import 'styles/_unit.scss';
+
+.footer {
+  padding: rem(32) 0;
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: rem(48);
+    padding-bottom: rem(40);
+    border-bottom: 1px solid #0000001f;
+  }
+
+  &_logo {
+    display: block;
+    width: rem(140);
+    height: rem(32);
+  }
+
+  &_links {
+    display: flex;
+    column-gap: rem(40);
+
+    a {
+      font-family: 'SF Pro Display';
+      font-weight: 500;
+      font-size: em(18);
+      line-height: em(20);
+      color: #252c32;
+    }
+  }
+
+  &_contacts {
+    &_container {
+      display: none;
+    }
+
+    &_item {
+      margin-bottom: rem(24);
+
+      h4 {
+        font-family: 'SF Pro Display';
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: rem(4);
+      }
+
+      p {
+        font-family: 'SF Pro Display';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+
+    &_item:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: rem(24);
+  }
+
+  &_copyright {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252c32;
+  }
+
+  &__brand {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: #000000;
+  }
+
+  &_socials {
+    display: flex;
+    // align-items: center;
+
+    a {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // width: rem(24);
+      // height: rem(24);
+
+      &:not(:last-child) {
+        margin-right: rem(20);
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(768)) {
+    padding: rem(40) 0;
+
+    &_top {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0;
+      border: none;
+    }
+
+    &_links {
+      flex-direction: column;
+      row-gap: rem(24);
+      margin-bottom: rem(24);
+    }
+
+    &_logo {
+      position: static;
+      margin-bottom: rem(25);
+      order: -2;
+    }
+
+    &_contacts_container {
+      display: block;
+    }
+
+    &_bottom {
+      flex-direction: column;
+      align-items: stretch;
+      margin: 0;
+      text-align: center;
+      border-top: 1px solid #0000001f;
+    }
+
+    &_copyright {
+      margin: rem(24) 0 rem(8);
+    }
+
+    &_socials {
+      padding-bottom: rem(25);
+      order: -1;
+    }
+  }
+}
+.logoFirst {
+  font-size: 30px;
+  line-height: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: red;
+}
+.logoSecond {
+  font-size: 30px;
+  line-height: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #1b5bf7; 
+}
+.desktop_contact {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+  
+  &_item {
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(20);
+  }
+}

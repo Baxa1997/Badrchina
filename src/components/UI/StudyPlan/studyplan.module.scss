@@ -1,0 +1,146 @@
+@import "styles/_unit.scss";
+
+.studyPlan {
+  padding: rem(60) 0;
+
+  .studyPlan_title {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(47);
+    text-align: center;
+    color: #000;
+  }
+
+  .studyPlan_content {
+    width: 100%;
+    margin: rem(40) 0 0;
+  }
+
+  .accordion {
+    background-color: none !important;
+    border-radius: rem(8) !important;
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+
+    .accordion_title {
+      font-family: "SF Pro Display";
+      font-weight: 700;
+      font-size: rem(20);
+      line-height: rem(25);
+      color: #000;
+    }
+
+    .accordion_details {
+      border-bottom-left-radius: rem(8);
+      border-bottom-right-radius: rem(8);
+      background: #f3f7ff;
+
+      .accordion_content {
+        padding: 0 rem(8) rem(16);
+
+        ul {
+          list-style: none;
+        }
+
+        ul.types_group_active {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li:before {
+            content: none;
+          }
+        }
+
+        li {
+          font-family: "SF Pro Display";
+          font-weight: 400;
+          font-size: rem(17);
+          line-height: rem(28);
+          color: #1a2024;
+          margin-left: rem(28);
+          position: relative;
+
+          &:not(:last-child) {
+            margin-bottom: rem(12);
+          }
+
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: -20px;
+            width: 8px;
+            height: 2px;
+            background-color: #1a2024;
+          }
+        }
+
+        .inner_li {
+          font-family: "SF Pro Display";
+          font-weight: 600;
+          font-size: rem(17);
+          line-height: rem(22);
+          color: #000000;
+          margin: 0;
+
+          &:not(:last-child) {
+            margin-bottom: rem(16);
+          }
+
+          ul {
+            list-style: none;
+            margin-top: rem(12);
+            margin-left: rem(28);
+
+            li:before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 12px;
+              left: -20px;
+              width: 8px;
+              height: 2px;
+              background-color: #1a2024;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(786)) {
+    .accordion {
+      .accordion_title {
+        max-width: rem(400);
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    .studyPlan_title {
+      font-size: rem(24);
+      line-height: rem(35);
+      text-align: left;
+    }
+
+    .studyPlan_content {
+      margin-top: rem(16);
+    }
+
+    .accordion {
+      .accordion_title {
+        max-width: rem(267);
+        font-size: rem(16);
+        line-height: rem(22);
+      }
+    }
+  }
+}

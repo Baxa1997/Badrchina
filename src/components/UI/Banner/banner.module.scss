@@ -1,0 +1,161 @@
+@import 'styles/unit.scss';
+
+.banner {
+  position: relative;
+    background: #0c0419;
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    min-height: rem(568);
+
+  }
+
+  &_text {
+    position: relative;
+    z-index: 9;
+    font-size: 40px;
+    max-width: rem(623);
+    align-self: center;
+    color: #fff;
+    
+    span {
+      color:gold;
+    }
+  }
+
+  &_title {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: rem(56);
+    line-height: rem(67);
+    max-width: rem(623);
+    color: #000;
+  }
+
+  &_subtitle {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: rem(20);
+    line-height: rem(26);
+    max-width: rem(504);
+    margin: rem(12) 0 0;
+    color: #5b6871;
+  }
+
+  &_btn {
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(24);
+    text-transform: none;
+    color: #fff;
+    margin: rem(40) 0 0;
+    padding: rem(12) rem(28);
+    border-radius: rem(6);
+    background: #1b5bf7;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_img {
+    display: flex;
+    max-width: rem(620);
+    max-height: rem(555);
+    z-index: 2;
+    position: relative;
+    align-self: flex-end;
+  }
+
+  @media screen and (max-width: rem(992)) {
+    &_title {
+      font-size: rem(38);
+      line-height: rem(46);
+    }
+
+    &_subtitle {
+      font-size: rem(18);
+      line-height: rem(24);
+    }
+
+    &_btn {
+      font-size: rem(16);
+      line-height: rem(22);
+    }
+  }
+
+  @media screen and (max-width: rem(786)) {
+    padding: rem(60) 0 rem(32);
+
+    &_content {
+      flex-direction: column-reverse;
+      justify-content: stretch;
+      min-height: rem(350);
+    }
+
+    &_text {
+      align-self: stretch;
+      max-width: rem(786);
+    }
+
+    &_subtitle {
+      max-width: rem(786);
+      margin-top: rem(8);
+    }
+
+    &_btn {
+      margin-top: rem(24);
+    }
+
+    &_img {
+      position: relative;
+      align-self: stretch;
+      max-width: rem(720);
+      max-height: rem(645);
+      margin-bottom: rem(34);
+      mask-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 30%
+      );
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    &_title {
+      font-size: rem(28);
+      line-height: rem(32px);
+    }
+
+    &_subtitle {
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+
+    &_btn {
+      font-size: rem(15);
+      line-height: rem(20);
+    }
+  }
+}
+
+.bannerImages {
+  position: relative;
+  width: 600px;
+  height: 100%;
+}
+
+.banner_img1 {
+  position: absolute;
+  right:50px;
+  top:100px;
+  z-index: 3;
+}
+.banner_img2 {
+  position: absolute;
+  right:0;
+  top:20px;
+  z-index: 2;
+}

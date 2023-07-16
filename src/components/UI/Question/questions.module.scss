@@ -1,0 +1,102 @@
+@import "styles/_unit.scss";
+
+.question {
+  padding: rem(60) 0;
+  background: #eef3ff;
+
+  &.feedback_invisible {
+    background: #fff;
+  }
+
+  .question_title {
+    font-size: rem(40);
+    line-height: rem(48);
+    font-weight: 700;
+    font-family: "SF Pro Display";
+    color: #000;
+    text-align: center;
+    margin: 0 0 rem(40);
+  }
+  .question_accordion_content {
+    .question_accordion_title {
+      font-size: rem(20);
+      line-height: rem(25);
+      color: #000;
+      font-weight: 700;
+      font-family: "SF Pro Display";
+      width: 100%;
+      padding-right: rem(24);
+    }
+
+    .question_accordion_subtitle {
+      font-size: rem(16);
+      line-height: rem(28);
+      font-weight: 400;
+      font-family: "SF Pro Display";
+      color: #5b6871;
+    }
+  }
+  .question_accordion_details {
+    padding: 0 rem(24) rem(16);
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    .question_title {
+      font-size: rem(24);
+      line-height: rem(35);
+      text-align: left;
+      margin-bottom: rem(16);
+    }
+
+    .question_accordion_content {
+      .question_accordion_title {
+        font-size: rem(16);
+        line-height: rem(22);
+      }
+    }
+
+    .question_accordion_details {
+      padding: 0 rem(12) rem(16);
+    }
+  }
+}
+
+.accordion {
+  background-color: none !important;
+  border-radius: rem(8) !important;
+  overflow: hidden;
+  &:not(:last-child) {
+    margin-bottom: rem(16);
+  }
+
+  .accordion_title {
+    font-size: rem(20) !important;
+    line-height: rem(25);
+    font-weight: 700;
+    color: #000;
+  }
+  .accordion_details {
+    border-bottom-left-radius: rem(8);
+    border-bottom-right-radius: rem(8);
+    // background: #F3F7FF;
+    padding: 0 !important;
+
+    .accordion_content {
+      padding: 0 0 rem(16) rem(48);
+
+      li {
+        font-size: rem(17);
+        line-height: rem(28);
+        font-weight: 400;
+        font-family: "SF Pro Display";
+        color: #5b6871;
+
+        &:not(:last-child) {
+          margin-bottom: rem(12);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "styles/_unit.scss";
+
+.success_dialog {
+  border-radius: rem(12);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  .success_content {
+    max-width: rem(612);
+    background: #fff;
+    border-radius: rem(12);
+    padding: rem(32) rem(40);
+
+    .cancelBtn {
+      width: rem(32);
+      height: rem(32);
+      background: none;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+    }
+
+    .success_content_context {
+      display: flex;
+      flex-direction: column;
+      margin-top: rem(36);
+
+      .success_image {
+        align-self: center;
+        position: relative;
+        width: rem(120);
+        height: rem(120);
+      }
+
+      h2 {
+        font-size: rem(40);
+        line-height: rem(48);
+        font-family: "SF Pro Display";
+        font-weight: 700;
+        color: #1a2024;
+        margin: rem(24) 0 rem(16);
+      }
+
+      p {
+        font-size: rem(20);
+        line-height: rem(24);
+        text-align: center;
+        max-width: rem(532);
+        font-family: "SF Pro Display";
+        font-weight: 400;
+        color: #5b6871;
+        margin: 0 0 rem(24);
+      }
+
+      .home_page_btn {
+        width: 100%;
+        background: #1b5bf7;
+        text-transform: none;
+        color: #fff;
+        font-size: rem(18);
+        line-height: rem(30);
+        font-weight: 500;
+        font-family: "SF Pro Display";
+        height: rem(52);
+        border-radius: rem(5);
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    .success_content {
+      padding: rem(24);
+
+      .success_content_context {
+        .success_image {
+          width: rem(80);
+          height: rem(80);
+
+          h2 {
+            font-size: rem(24);
+            line-height: rem(32);
+          }
+          
+          p {
+            font-size: rem(16);
+            line-height: rem(24);
+          }
+
+          .home_page_btn {
+            font-size: rem(16);
+            line-height: rem(24);
+          }
+        }
+      }
+    }
+  }
+}

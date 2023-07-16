@@ -1,0 +1,104 @@
+@import "styles/_unit.scss";
+
+.numbers {
+  padding: rem(56) 0;
+  width: 100%;
+  background: #0c0419;
+  color:#fff;
+  
+  .title {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(48);
+    text-align: center;
+    color: #fff;
+    margin-bottom: rem(40);
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(38);
+
+    &_item {
+      text-align: center;
+
+      &:not(:last-child) {
+        padding-right: rem(38);
+        border-right: 2px solid rgba(14, 69, 219, 0.4);
+      }
+
+      h3 {
+        font-family: "SF Pro Display";
+        font-weight: 800;
+        font-size: rem(48);
+        line-height: rem(64);
+        font-feature-settings: "salt" on, "liga" off;
+
+      }
+
+      p {
+        font-family: "SF Pro Display";
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: rem(24);
+        font-feature-settings: "salt" on, "liga" off;
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(992)) {
+    &_content {
+      grid-template-columns: repeat(2, 1fr);
+
+      &_item {
+        &:not(:last-child) {
+          padding: 0;
+          border: 0;
+        }
+
+        &:nth-child(2n + 1) {
+          padding-right: rem(38);
+          border-right: 2px solid rgba(14, 69, 219, 0.4);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    &_content {
+      grid-template-columns: 1fr;
+      gap: 0;
+
+      &_item {
+        text-align: left;
+
+        &:not(:last-child) {
+          border: 0;
+        }
+
+        &:nth-child(1n) {
+          padding: rem(16) 0;
+          border-bottom: 2px solid rgba(14, 69, 219, 0.4);
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        h3 {
+          font-size: rem(40);
+          line-height: rem(48);
+          margin-bottom: rem(8);
+        }
+
+        p {
+          font-size: rem(16);
+          line-height: rem(20);
+        }
+      }
+    }
+  }
+}

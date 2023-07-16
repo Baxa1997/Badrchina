@@ -1,0 +1,42 @@
+{
+  "name": "nextjs_template_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "env-cmd -f .env.development next dev",
+    "build": "env-cmd -f .env.production next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.6.2",
+    "@mui/styles": "^5.8.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "axios": "^0.26.1",
+    "next": "12.1.5",
+    "next-translate": "1.4.0",
+    "next-ym": "^2.3.5",
+    "nookies": "^2.5.2",
+    "react": "18.0.0",
+    "react-calendar": "^3.7.0",
+    "react-dom": "18.0.0",
+    "react-facebook-pixel": "^1.0.4",
+    "react-input-mask": "^2.0.4",
+    "react-redux": "^8.0.1",
+    "react-select": "^5.4.0",
+    "react-slick": "^0.29.0",
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.50.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.3.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5"
+  }
+}

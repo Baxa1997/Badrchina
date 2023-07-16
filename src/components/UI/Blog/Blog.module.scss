@@ -1,0 +1,83 @@
+@import "styles/_unit.scss";
+
+.blog {
+  padding: rem(60) 0;
+
+  .blog_title {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(48);
+    text-align: center;
+    color: #000;
+    margin-bottom: rem(100);
+  }
+
+  .blog_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: rem(24);
+
+    .blog_content_item {
+      padding: rem(0) rem(24) rem(32);
+      border: 1px solid #eff0f6;
+      border-radius: 8px;
+      background: #ffffff;
+      margin-top: rem(60);
+
+      .blog_content_img {
+        position: relative;
+        max-width: rem(295);
+        height: rem(227);
+        margin: rem(-60) auto 0;
+      }
+
+      h4 {
+        font-weight: 600;
+        font-size: rem(22);
+        line-height: rem(26);
+        color: #1a2024;
+        margin: rem(40) 0 rem(12);
+        min-height: rem(52);
+      }
+
+      p {
+        font-family: "Inter";
+        font-size: rem(16);
+        line-height: rem(22);
+        font-weight: 400;
+        color: #5b6871;
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    .blog_title {
+      font-size: rem(24);
+      line-height: rem(35);
+      text-align: left;
+      margin-bottom: rem(30);
+    }
+
+    .blog_content {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+      .blog_content_item {
+        padding: rem(0) rem(16) rem(16);
+
+        h4 {
+          font-size: rem(20);
+          line-height: rem(25);
+          min-height: auto;
+        }
+
+        p {
+          font-size: rem(14);
+          line-height: rem(20);
+        }
+      }
+    }
+  }
+}

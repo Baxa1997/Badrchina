@@ -1,0 +1,93 @@
+import Link from 'next/link'
+import Image from 'next/image'
+import { Container } from '@mui/material'
+import useTranslation from 'next-translate/useTranslation'
+
+import styles from './Footer.module.scss'
+import Logo from '../../../../public/images/Logo.png'
+import {
+  InstagramIcon,
+  FacebookIcon,
+  TelegramIcon,
+  YouTubeIcon
+} from '../../svg.js'
+import { useRouter } from 'next/router'
+
+export function Footer() {
+  const { t } = useTranslation('common')
+  const router = useRouter()
+  return (
+    <div
+      className={styles.footer}
+      style={{
+        borderTop:
+          router.query.id === 'foundation' && '1px solid rgba(0, 0, 0, 0.12)'
+      }}
+    >
+      <Container className='container'>
+        <div className={styles.footer_top}>
+          <div className={styles.footer_logo}>
+            <Link href='/'>
+              <a>
+              <span className={styles.logoFirst}>Badr</span><span className={styles.logoSecond}>China</span>
+              </a>
+            </Link>
+          </div>
+          <div className={styles.footer_links}>
+            <Link href='/#courses'>
+              <a>
+               Biz Haqimizda
+                {/* All courses */}
+              </a>
+            </Link>
+            <Link href='/#feedback'>
+              <a>
+                Shaharlar
+                {/* Feedbacks */}
+              </a>
+            </Link>
+            <Link href='/#numbers'>
+              <a>
+                Biz haqimizda
+                {/* About us */}
+              </a>
+            </Link>
+          </div>
+          <div className={styles.footer_socials}>
+            <a href='https://www.instagram.com/uacademyuz'>
+              <InstagramIcon />
+            </a>
+            <a href=''>
+              <FacebookIcon />
+            </a>
+            <a href='https://t.me/uacademy_admin '>
+              <TelegramIcon />
+            </a>
+            <a href='https://www.youtube.com/channel/UCfntWfjB90KbAuw6AFF4cBQ'>
+              <YouTubeIcon />
+            </a>
+          </div>
+          <div className={styles.footer_contacts_container}>
+            <div className={styles.footer_contacts_item}>
+              <h4>+998 99 400 20 40</h4>
+              <p>Contacts</p>
+            </div>
+            <div className={styles.footer_contacts_item}>
+              <h4>Toshkent, Shahriobod street</h4>
+              <p>Address</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.footer_bottom}>
+          <p className={styles.footer_copyright}>
+            {/* © Uacademy 2021 - 2022 Barcha huquqlar himoyalangan */}©
+            BadrChina 2023 - 2025 All rights reserved
+          </p>
+          <p className={styles.footer__brand}>
+            <a href='https://udevs.io/'>by Udevs</a>
+          </p>
+        </div>
+      </Container>
+    </div>
+  )
+}

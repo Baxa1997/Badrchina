@@ -1,0 +1,51 @@
+@import "styles/_unit.scss";
+
+.process {
+  padding: rem(60) 0;
+
+  .process_title {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(48);
+    text-align: center;
+    color: #000;
+    margin: 0 0 rem(40);
+  }
+  .process_content {
+    .process_content_process_desktop {
+      display: block;
+      max-width: 100%;
+      height: rem(304);
+    }
+
+    .process_content_process_mobile {
+      display: none;
+      max-width: rem(786);
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: rem(768)) {
+    .process_content {
+      .process_content_process_desktop {
+        display: none;
+      }
+
+      .process_content_process_mobile {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+    
+    .process_title {
+      font-size: rem(24);
+      line-height: rem(35);
+      text-align: left;
+      margin-bottom: rem(16);
+    }
+  }
+}

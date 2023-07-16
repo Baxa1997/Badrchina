@@ -1,0 +1,83 @@
+@import "styles/_unit.scss";
+
+.features {
+  padding: rem(60) 0;
+  background: #0c0419;
+  color: #fff;
+  
+  .title {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(48);
+    text-align: center;
+    color: #fff;
+    margin-bottom: rem(40);
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(rem(294), 1fr));
+    gap: rem(24);
+
+    &_item {
+      padding: rem(20);
+      border: 1px solid #eff0f6;
+      border-radius: rem(8);
+    }
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: rem(64);
+      height: rem(64);
+      border-radius: 50%;
+      background: rgba(27, 91, 247, 0.06);
+    }
+
+    &_context {
+      h4 {
+        font-family: "SF Pro Display";
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: rem(28);
+        margin: rem(20) 0 0;
+        min-height: rem(56);
+      }
+
+      p {
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: rem(22);
+        margin: rem(10) 0 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+    
+    &_content {
+      &_item {
+        padding: rem(16);
+      }
+
+      &_icon {
+        width: rem(48);
+        height: rem(48);
+      }
+
+      &_context {
+        h4 {
+          margin-top: rem(16);
+          min-height: auto;
+        }
+
+        p {
+          font-size: rem(14);
+          margin-top: rem(8);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import 'styles/_unit.scss';
+
+.blog {
+  padding: 60px 0;
+  .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+    width: 590px;
+  }
+  .img {
+    height: 495px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

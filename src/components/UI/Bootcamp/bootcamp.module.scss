@@ -1,0 +1,113 @@
+@import "styles/_unit.scss";
+
+.bootcamp {
+  background: #f3f7ff;
+  padding: rem(60) 0;
+  width: 100%;
+
+  &_title {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(48);
+    color: #18191f;
+    margin: 0 0 rem(48);
+  }
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(24);
+  }
+
+  &_context {
+    &_item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      max-width: rem(540);
+      min-height: rem(72);
+
+      &:not(:last-child) {
+        margin: 0 0 rem(48);
+      }
+
+      &_icon {
+        width: rem(72);
+        height: rem(72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 rem(32) 0 0;
+        border-radius: 50%;
+        background: #fff;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: rem(22);
+        line-height: rem(26);
+        color: #18191f;
+      }
+    }
+  }
+
+  &_info_img {
+    position: relative;
+    width: rem(506);
+    height: rem(463);
+    border-radius: rem(6);
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: rem(992)) {
+    &_content {
+      flex-direction: column-reverse;
+    }
+
+    &_title {
+      margin-bottom: rem(28);
+    }
+
+    &_info_img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    &_title {
+      font-size: rem(24);
+      line-height: rem(35);
+      margin-bottom: rem(18);
+    }
+
+    &_context {
+      &_item {
+        min-height: rem(48);
+
+        &:not(:last-child) {
+          margin: 0 0 rem(16);
+        }
+
+        &_icon {
+          width: rem(48);
+          height: rem(48);
+          margin: 0 rem(16) 0 0;
+          padding: rem(12);
+        }
+
+        p {
+          font-weight: 400;
+          font-size: rem(17);
+          line-height: rem(22);
+        }
+      }
+    }
+
+   &_info_img {
+    height: rem(212);
+   }
+  }
+}

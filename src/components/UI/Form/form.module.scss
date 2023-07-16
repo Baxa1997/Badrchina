@@ -1,0 +1,170 @@
+@import "styles/_unit.scss";
+
+.form {
+  padding: rem(60) 0;
+  width: 100%;
+  background: #eef3ff;
+
+  &.singleFormActive {
+    background: #fff;
+
+    .form_panel input {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+
+      &:focus {
+        border-color:#1b5bf7;
+      }
+    }
+  }
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(24);
+
+    &_text {
+      max-width: rem(554);
+
+      h2 {
+        font-family: "SF Pro Display";
+        font-weight: 700;
+        font-size: rem(50);
+        line-height: rem(60);
+        color: #1a2024;
+        margin-bottom: rem(12);
+      }
+
+      p {
+        font-family: "SF Pro Display";
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: rem(28);
+        color: #5b6871;
+      }
+    }
+  }
+
+  &_panel {
+    max-width: rem(425);
+    flex-basis: rem(425);
+
+    input {
+      font-family: "SF Pro Display";
+      font-weight: 400;
+      font-size: rem(15);
+      line-height: rem(24);
+      color: #000;
+      display: block;
+      width: 100%;
+      height: rem(48);
+      padding: rem(13) rem(16);
+      border-radius: rem(5);
+      border: none;
+      background: #fff;
+      outline: none;
+
+      &:focus {
+        border: 1px solid #1b5bf7;
+      }
+
+      &::placeholder {
+        font-family: "SF Pro Display";
+        font-weight: 400;
+        font-size: rem(15);
+        line-height: rem(24);
+        color: #48535b;
+      }
+
+      &:first-child {
+        margin: 0 0 rem(16);
+      }
+    }
+
+    select {
+      width: 100%;
+    }
+
+    &_select {
+      margin-bottom: rem(16);
+    }
+
+    button {
+      font-family: "SF Pro Display";
+      font-weight: 500;
+      font-size: rem(18);
+      line-height: rem(30);
+      color: #fff;
+      margin: rem(32) 0 0;
+      width: 100%;
+      height: rem(52);
+      border: none;
+      border-radius: rem(5);
+      background: #1b5bf7;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: rem(992)) {
+    &_content {
+      &_text {
+        max-width: rem(400);
+      }
+
+      h2 {
+        font-size: rem(40);
+        line-height: rem(50);
+      }
+
+      p {
+        font-size: rem(18);
+        line-height: rem(26);
+      }
+    }
+
+    &_panel {
+      flex-basis: auto;
+    }
+  }
+
+  @media screen and (max-width: rem(786)) {
+    &_content {
+      flex-direction: column;
+      align-items: stretch;
+
+      &_text {
+        max-width: 100%;
+      }
+    }
+
+    &_panel {
+      max-width: rem(786);
+    }
+  }
+
+  @media screen and (max-width: rem(576)) {
+    padding: rem(32) 0;
+
+    &_content {
+      h2 {
+        font-size: rem(24);
+        line-height: rem(35);
+        margin-bottom: rem(16);
+      }
+
+      p {
+        font-size: rem(16);
+        line-height: rem(20);
+      }
+    }
+
+    &_panel {
+      input {
+        padding: rem(12) rem(16);
+      }
+
+      button {
+        margin-top: rem(24);
+      }
+    }
+  }
+}
