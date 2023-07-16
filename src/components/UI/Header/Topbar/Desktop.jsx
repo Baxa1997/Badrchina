@@ -23,7 +23,7 @@ function Desktop() {
         <div className={styles.desktop_topbar_content}>
           <Link href='/'>
             <a className={styles.desktop_logo}>
-              <span className={styles.logoFirst}>BADR</span> <span className={styles.logoSecond}>CHINA</span>
+              <span className={styles.logoFirst}>BADR</span>  <span className={styles.logoSecond}>CHINA</span>
             </a>
           </Link>
           
