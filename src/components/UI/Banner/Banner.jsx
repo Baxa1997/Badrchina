@@ -21,9 +21,9 @@ function Banner() {
         <div className={styles.banner_img1}>
             <Image src={BannerImage2} alt='' />
           </div>
-        <div className={styles.banner_img2}>
+        {/* <div className={styles.banner_img2}>
             <Image src={BannerImage3} alt='' />
-          </div>
+          </div> */}
         </div>
         </div>
       </Container>

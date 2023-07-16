@@ -37,9 +37,9 @@ function Desktop() {
           </div>
 
           <div className={styles.contact_panel}>
-            <a href='tel:+998 (99) 400-20-40'>
+            <a href='tel:+998 (93) 577-50-45'>
               <PhoneIcon />
-              <span>+998 (99) 400-20-40</span>
+              <span>+998 (93) 577-50-45</span>
             </a>
 
             <Button

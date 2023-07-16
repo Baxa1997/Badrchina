@@ -10,8 +10,8 @@ const data = [
     img: '/images/Khiva.jpg',
     title: 'Khiva',
     subtitle:
-      "narxi: 100$, shaharlar: Samarqand, Khiva, Farg'ona",
-    term: '2 hafta',
+      "Khiva",
+    term: '1 hafta',
     slug: 'foundation'
   },
   {
@@ -19,7 +19,7 @@ const data = [
     img: '/images/Samarqand.jpg',
     title: 'Samarqand',
     subtitle:
-      "narxi: 100$, shaharlar: Samarqand, Khiva, Farg'ona",
+      "Samarqand",
     term: '1 hafta',
     slug: 'foundation'
   },
@@ -28,8 +28,8 @@ const data = [
     img: '/images/Bukhara.jpg',
     title: 'Bukhara',
     subtitle:
-      "narxi: 100$, shaharlar: Samarqand, Khiva, Farg'ona",
-    term: '1 oy',
+      "Samarqand",
+    term: '1 hafta',
     slug: 'foundation'
   },
   {
@@ -37,8 +37,8 @@ const data = [
     img: '/images/Khiva2.jpg',
     title: 'Khiva',
     subtitle:
-      "narxi: 100$, shaharlar: Samarqand, Khiva, Farg'ona",
-    term: '1 oy',
+      "Khiva",
+    term: '1 hafta',
     slug: 'foundation'
   },
 ]

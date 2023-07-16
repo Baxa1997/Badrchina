@@ -11,6 +11,7 @@ import {
   TelegramIcon,
   YouTubeIcon
 } from '../../svg.js'
+import Whatsup from '../../../../public/images/whatsapp-svgrepo-com.svg'
 import { useRouter } from 'next/router'
 
 export function Footer() {
@@ -54,22 +55,25 @@ export function Footer() {
             </Link>
           </div>
           <div className={styles.footer_socials}>
-            <a href='https://www.instagram.com/uacademyuz'>
+            <a href=''>
               <InstagramIcon />
             </a>
             <a href=''>
               <FacebookIcon />
             </a>
-            <a href='https://t.me/uacademy_admin '>
+            <a href=' '>
               <TelegramIcon />
             </a>
-            <a href='https://www.youtube.com/channel/UCfntWfjB90KbAuw6AFF4cBQ'>
+            <a href=''>
               <YouTubeIcon />
+            </a>
+            <a href=''>
+              {/* <YouTubeIcon /> */}
             </a>
           </div>
           <div className={styles.footer_contacts_container}>
             <div className={styles.footer_contacts_item}>
-              <h4>+998 99 400 20 40</h4>
+              <h4>+998 99 577 50 45</h4>
               <p>Contacts</p>
             </div>
             <div className={styles.footer_contacts_item}>

@@ -71,7 +71,7 @@ function Mobile() {
             </Link>
           </div>
           <a
-            href="tel:+998 (99) 400-20-40"
+            href="tel:+998 (93) 577-50-45"
             className={styles.mobile_header_phone}
             onClick={handleClose}
           >
@@ -79,7 +79,7 @@ function Mobile() {
               <DrawerPhoneIcon />
             </span>
             <span className={styles.mobile_header_phone_number}>
-              +998 (99) 400-20-40
+              +998 (93) 577-50-45
             </span>
           </a>
         </div>
