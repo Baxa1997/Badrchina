@@ -2,7 +2,7 @@
 
 .banner {
   position: relative;
-    background: #0c0419;
+    background: #fff;
 
   &_content {
     display: flex;
@@ -17,10 +17,13 @@
     font-size: 40px;
     max-width: rem(623);
     align-self: center;
-    color: #fff;
+    color: #000;
+    font-weight: 600;
     
     span {
-      color:gold;
+      color:#1b5bf7;
+      font-weight: 900;
+      font-style: italic;
     }
   }
 
