@@ -43,7 +43,7 @@ function Bootcamp() {
     <div className={styles.bootcamp}>
       <Container className='container'>
         <h2 className={styles.bootcamp_title}>
-          Bizning Sayohat Rejamiz va maqsatimiz
+          Bizning Sayohat Rejamiz va maqsadimiz
         </h2>
         <div className={styles.bootcamp_content}>
           <div className={styles.bootcamp_context}>

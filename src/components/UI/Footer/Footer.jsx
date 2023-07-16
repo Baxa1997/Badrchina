@@ -30,7 +30,7 @@ export function Footer() {
           <div className={styles.footer_logo}>
             <Link href='/'>
               <a>
-              <span className={styles.logoFirst}>Badr</span><span className={styles.logoSecond}>China</span>
+              <span className={styles.logoFirst}>BADR</span> <span className={styles.logoSecond}>CHINA</span>
               </a>
             </Link>
           </div>
@@ -55,13 +55,13 @@ export function Footer() {
             </Link>
           </div>
           <div className={styles.footer_socials}>
-            <a href=''>
+            <a href='https://instagram.com/mhisrgsii?igshid=MzNlNGNkZWQ4Mg=='>
               <InstagramIcon />
             </a>
             <a href=''>
               <FacebookIcon />
             </a>
-            <a href=' '>
+            <a href='https://t.me/badrchina'>
               <TelegramIcon />
             </a>
             <a href=''>
