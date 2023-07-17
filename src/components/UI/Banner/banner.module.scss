@@ -8,7 +8,11 @@
     display: flex;
     justify-content: space-between;
     min-height: rem(568);
-
+    
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      height: 100px;
+    }
   }
 
   &_text {
@@ -75,6 +79,7 @@
     z-index: 2;
     position: relative;
     align-self: flex-end;
+    
   }
 
   @media screen and (max-width: rem(992)) {
@@ -98,8 +103,8 @@
     padding: rem(60) 0 rem(32);
 
     &_content {
-      flex-direction: column-reverse;
-      justify-content: stretch;
+      // flex-direction: column-reverse;
+      // justify-content: stretch;
       min-height: rem(350);
     }
 
@@ -120,8 +125,8 @@
     &_img {
       position: relative;
       align-self: stretch;
-      max-width: rem(720);
-      max-height: rem(645);
+      max-width: rem(220);
+      max-height: rem(245);
       margin-bottom: rem(34);
       mask-image: linear-gradient(
         to top,
@@ -153,6 +158,10 @@
   position: relative;
   width: 600px;
   height: 100%;
+  @media screen and (max-width: rem(576)) {
+    width: 300px;
+    height:300px;
+  }
 }
 
 .banner_img1 {

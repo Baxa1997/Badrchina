@@ -28,13 +28,13 @@ function Banner() {
         </div>
         </div>
       </Container>
-      <Image
+      {/* <Image
         src={BannerBg}
-        objectFit='cover'
+        width={300}
+        height={300}
         priority={true}
         alt='cspace'
-        layout='fill'
-      />
+      /> */}
     </div>
   )
 }

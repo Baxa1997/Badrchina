@@ -47,12 +47,14 @@
       .contact_panel {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         min-width: rem(100);
 
         a {
           display: inline-flex;
           justify-content: space-between;
           align-items: center;
+          margin: 0 5px;
 
           span {
             font-weight: 500;

@@ -150,7 +150,7 @@ function GalleryImages(props) {
                 >
                 <Box sx={style}>
                    <Image
-                   src={'/images/khiva2.jpg'}
+                   src={'/images/khiva2 .jpg'}
                    alt=''
                    width={753}
                    height={505}

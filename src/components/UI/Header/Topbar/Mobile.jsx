@@ -81,6 +81,9 @@ function Mobile() {
             <span className={styles.mobile_header_phone_number}>
               +998 (93) 577-50-45
             </span>
+            <span className={styles.mobile_header_phone_number}>
+            +998 (99) 965 02 98
+            </span>
           </a>
         </div>
       </Drawer>
