@@ -25,7 +25,10 @@ function Mobile() {
             <div>
               <Link href="/">
                 <a className={styles.mobile_header_logo}>
-                  <Image src={Logo} alt="" width={119.1} height={27} />
+                  {/* <Image src={Logo} alt="" width={119.1} height={27} /> */}
+                  <a className={styles.desktop_logo}>
+              <span className={styles.logoFirst}>BADR</span>  <span className={styles.logoSecond}>CHINA</span>
+            </a>
                 </a>
               </Link>
             </div>
