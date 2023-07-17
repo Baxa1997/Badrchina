@@ -5,9 +5,6 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import { makeStyles } from '@mui/styles';
-import gallerImg1 from '../../../../../public/images/samarqand1.jpg';
-import gallerImg2 from '../../../../../public/images/samarqand2.jpg';
-import gallerImg3 from '../../../../../public/images/samarqand.jpg';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 const useStyles = makeStyles({

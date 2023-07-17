@@ -35,13 +35,13 @@ export function Footer() {
             </Link>
           </div> */}
           <div className={styles.footer_links}>
-            <Link href='/#courses'>
+            <Link href=''>
               <a>
                Biz Haqimizda
                 {/* All courses */}
               </a>
             </Link>
-            <Link href='/#feedback'>
+            <Link href='/#courses'>
               <a>
                 Shaharlar
                 {/* Feedbacks */}
