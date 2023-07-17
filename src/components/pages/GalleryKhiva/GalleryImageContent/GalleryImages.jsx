@@ -6,8 +6,8 @@ import Box from '@mui/material/Box';
 import Image from 'next/image';
 import { makeStyles } from '@mui/styles';
 import gallerImg1 from '../../../../../public/images/khiva1.jpg';
-import gallerImg2 from '../../../../../public/images/khiva2.jpg';
-import gallerImg3 from '../../../../../public/images/khiva3.jpg';
+import gallerImg2 from '../../../../../public/images/khiva1.jpg';
+import gallerImg3 from '../../../../../public/images/khiva1.jpg';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 const useStyles = makeStyles({
