@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { makeStyles } from '@mui/styles';
 import gallerImg1 from '../../../../../public/images/samarqand1.jpg';
 import gallerImg2 from '../../../../../public/images/samarqand2.jpg';
+import gallerImg3 from '../../../../../public/images/samarqand.jpg';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 const useStyles = makeStyles({
@@ -73,7 +74,7 @@ function GalleryImages(props) {
                     />
                     </div>
                 </Button>
-                {/* <Button onClick={handleOpen} style={{ background: 'none', padding: 0}}>
+                <Button onClick={handleOpen} style={{ background: 'none', padding: 0}}>
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
@@ -81,7 +82,7 @@ function GalleryImages(props) {
                     alt=''
                     />
                     </div>
-                </Button> */}
+                </Button>
                 {/* <Button onClick={handleOpen} style={{ background: 'none', padding: 0}}>
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
