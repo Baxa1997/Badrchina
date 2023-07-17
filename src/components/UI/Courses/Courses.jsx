@@ -8,7 +8,7 @@ const data = [
   {
     id: 0,
     img: '/images/Khiva.jpg',
-    title: 'Tashkent',
+    title: 'Tashkent 塔什干 (Tǎshígàn)',
     subtitle:
       "Tashkent",
     slug: 'tashkent'
@@ -16,7 +16,7 @@ const data = [
   {
     id: 1,
     img: '/images/Khiva.jpg',
-    title: 'Khiva',
+    title: 'Khiva 希瓦 (Xīwǎ)',
     subtitle:
       "Khiva",
     slug: 'khiva'
@@ -24,7 +24,7 @@ const data = [
   {
     id: 2,
     img: '/images/Samarqand.jpg',
-    title: 'Samarqand',
+    title: "Samarqand 撒马尔罕 (Sāmǎ'ěrhǎn)",
     subtitle:
       "Samarqand",
     slug: 'samarqand'
@@ -32,7 +32,7 @@ const data = [
   {
     id: 3,
     img: '/images/Bukhara.jpg',
-    title: 'Bukhara',
+    title: 'Bukhara 布哈拉 (Bùhālā)',
     subtitle:
       "Samarqand",
     slug: 'bukhara'
