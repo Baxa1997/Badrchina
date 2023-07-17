@@ -59,8 +59,10 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg1}
+                    src={'/images/samarqand.jpg'}
                     alt=''
+                    width={400}
+                    height={400}
                     />
                     </div>
                     
@@ -69,8 +71,10 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg2}
+                    src={'/images/samarqand1.jpg'}
                     alt=''
+                    width={400}
+                    height={400}
                     />
                     </div>
                 </Button>
@@ -78,8 +82,10 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg3}
+                    src={'/images/samarqand2.jpg'}
                     alt=''
+                    width={400}
+                    height={400}
                     />
                     </div>
                 </Button>
@@ -147,7 +153,7 @@ function GalleryImages(props) {
                 >
                 <Box sx={style}>
                    <Image
-                   src={gallerImg2}
+                   src={'/images/samarqand2.jpg'}
                    alt=''
                    width={753}
                    height={505}

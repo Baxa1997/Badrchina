@@ -5,9 +5,6 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import { makeStyles } from '@mui/styles';
-import gallerImg1 from '../../../../../public/images/khiva1.jpg';
-import gallerImg2 from '../../../../../public/images/khiva1.jpg';
-import gallerImg3 from '../../../../../public/images/khiva1.jpg';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 const useStyles = makeStyles({
@@ -59,8 +56,10 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg1}
+                    src={'/images/khiva1.jpg'}
                     alt=''
+                    width={400}
+                    height={400}
                     />
                     </div>
                     
@@ -69,8 +68,10 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg2}
+                    src={'/images/khiva2.jpg'   }
                     alt=''
+                    width={400}
+                    height={400}
                     />
                     </div>
                 </Button>
@@ -78,8 +79,10 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg3}
+                    src={'/images/khiva3.jpg'}
                     alt=''
+                    width={400}
+                    height={400}
                     />
                     </div>
                 </Button>
@@ -147,7 +150,7 @@ function GalleryImages(props) {
                 >
                 <Box sx={style}>
                    <Image
-                   src={gallerImg2}
+                   src={'/images/khiva2.jpg'}
                    alt=''
                    width={753}
                    height={505}

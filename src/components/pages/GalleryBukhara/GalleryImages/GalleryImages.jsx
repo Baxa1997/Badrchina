@@ -59,7 +59,9 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg1}
+                    src={'/images/bukhara1.jpg'}
+                    width={400}
+                    height={400}
                     alt=''
                     />
                     </div>
@@ -69,7 +71,9 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg2}
+                    src={'/images/bukhara2.jpg'}
+                    width={400}
+                    height={400}
                     alt=''
                     />
                     </div>
@@ -78,7 +82,9 @@ function GalleryImages(props) {
                     <div className={styles.gallery_Img}>
                     <CameraAltIcon className={ classes.photoIcon }/>
                     <Image
-                    src={gallerImg3}
+                    src={'/images/bukhara3.jpg'}
+                    width={400}
+                    height={400}
                     alt=''
                     />
                     </div>
@@ -147,7 +153,7 @@ function GalleryImages(props) {
                 >
                 <Box sx={style}>
                    <Image
-                   src={gallerImg2}
+                   src={'/images/bukhara2.jpg'}
                    alt=''
                    width={753}
                    height={505}
