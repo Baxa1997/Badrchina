@@ -16,7 +16,7 @@
   }
   &_content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(rem(294), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
     gap: rem(24);
 
     &_item {

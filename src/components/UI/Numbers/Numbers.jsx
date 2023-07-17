@@ -7,18 +7,18 @@ const data = [
 
   {
     id: 1,
-    number: '200',
-    subtitle: 'dan ortiq mamnun sayohatchilar '
+    number: '2000',
+    subtitle: '2,000 dan oshiq sayyohlar qabul qilishni reja qilganmiz'
   },
   {
     id: 2,
     number: '10',
-    subtitle: 'dan ortiq yangi shaharlar'
+    subtitle: 'dan ortiq yangi yunalishlarni yulga quyamiz'
   },
   {
     id: 3,
     number: '2',
-    subtitle: 'yangi paketlar'
+    subtitle: 'turlik paketlar'
   }
 ]
 

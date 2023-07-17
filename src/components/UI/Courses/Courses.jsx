@@ -8,38 +8,34 @@ const data = [
   {
     id: 0,
     img: '/images/Khiva.jpg',
+    title: 'Tashkent',
+    subtitle:
+      "Tashkent",
+    slug: 'tashkent'
+  },
+  {
+    id: 1,
+    img: '/images/Khiva.jpg',
     title: 'Khiva',
     subtitle:
       "Khiva",
-    term: '1 hafta',
-    slug: 'foundation'
+    slug: 'khiva'
   },
   {
-    id: 0,
+    id: 2,
     img: '/images/Samarqand.jpg',
     title: 'Samarqand',
     subtitle:
       "Samarqand",
-    term: '1 hafta',
-    slug: 'foundation'
+    slug: 'samarqand'
   },
   {
-    id: 0,
+    id: 3,
     img: '/images/Bukhara.jpg',
     title: 'Bukhara',
     subtitle:
       "Samarqand",
-    term: '1 hafta',
-    slug: 'foundation'
-  },
-  {
-    id: 0,
-    img: '/images/Khiva2.jpg',
-    title: 'Khiva',
-    subtitle:
-      "Khiva",
-    term: '1 hafta',
-    slug: 'foundation'
+    slug: 'bukhara'
   },
 ]
 
@@ -47,7 +43,7 @@ function Courses() {
   const router = useRouter()
 
   const handleClick = (slug) => {
-    router.push(`/${''}`)
+    router.push(`/${slug}`)
   }
 
 
@@ -55,8 +51,7 @@ function Courses() {
     <div className={styles.courses} id='courses'>
       <Container className='container'>
         <h2 className='title'>
-          Sayohat paketini tanlang
-          {/* Choose your field */}
+          Sayohat yo'nalishini tanlang
         </h2>
         <div className={styles.courses_content}>
           {data?.map((item) => (
@@ -65,7 +60,7 @@ function Courses() {
               key={item?.id}
               className={styles.courses_content_item}
             >
-              <div className={styles.badge}>{item.term}</div>
+              {/* <div className={styles.badge}>{item.term}</div> */}
               <div className={styles.courses_content_img}>
                 <img src={item?.img} alt='' />
               </div>
@@ -77,10 +72,6 @@ function Courses() {
                 <Button disableRipple className={styles.register_btn}>
                   Batafsil ma'lumot
                 </Button>
-                {/* <span>
-                  Batafsil ma'lumot
-            
-                </span> */}
               </div>
             </div>
           ))}

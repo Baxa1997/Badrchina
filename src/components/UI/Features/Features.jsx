@@ -10,15 +10,15 @@ import {
 } from '../../svg'
 
 const data = [
-  {
-    id: 0,
-    img: <FeatureIcon1 />,
-    title: "Katta Maqsadlar",
-    // title: "Mentors with experience in large projects",
-    subtitle:
-      "O'z ishini ustalari"
-    // subtitle: "Our mentors have participated in at least 3 projects."
-  },
+  // {
+  //   id: 0,
+  //   img: <FeatureIcon1 />,
+  //   title: "Katta Maqsadlar",
+  //   // title: "Mentors with experience in large projects",
+  //   subtitle:
+  //     "O'z ishini ustalari"
+  //   // subtitle: "Our mentors have participated in at least 3 projects."
+  // },
   {
     id: 1,
     img: <FeatureIcon2 />,

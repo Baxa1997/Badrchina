@@ -27,13 +27,13 @@ export function Footer() {
     >
       <Container className='container'>
         <div className={styles.footer_top}>
-          <div className={styles.footer_logo}>
+          {/* <div className={styles.footer_logo}>
             <Link href='/'>
               <a>
               <span className={styles.logoFirst}>BADR</span> <span className={styles.logoSecond}>CHINA</span>
               </a>
             </Link>
-          </div>
+          </div> */}
           <div className={styles.footer_links}>
             <Link href='/#courses'>
               <a>
@@ -87,9 +87,9 @@ export function Footer() {
             {/* © Uacademy 2021 - 2022 Barcha huquqlar himoyalangan */}©
             BadrChina 2023 - 2025 All rights reserved
           </p>
-          <p className={styles.footer__brand}>
+          {/* <p className={styles.footer__brand}>
             <a href='https://udevs.io/'>by Udevs</a>
-          </p>
+          </p> */}
         </div>
       </Container>
     </div>

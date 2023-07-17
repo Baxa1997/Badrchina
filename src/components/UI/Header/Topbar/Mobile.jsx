@@ -44,21 +44,21 @@ function Mobile() {
             <button onClick={handleClose}>
               <DrawerCloseIcon />
             </button>
-            <Link href="/">
+            {/* <Link href="/">
               <a
                 className={styles.mobile_header_drawer_logo}
                 onClick={handleClose}
               >
                 <Image src={Logo} alt="" width={119.1} height={27} />
               </a>
-            </Link>
+            </Link> */}
           </div>
           <div className={styles.mobile_header_links}>
-            <Link href="/#courses">
+            {/* <Link href="/#courses">
               <a className={styles.mobile_header_link} onClick={handleClose}>
                 All courses
               </a>
-            </Link>
+            </Link> */}
             <Link href="/#feedback">
               <a className={styles.mobile_header_link} onClick={handleClose}>
                 Feedbacks

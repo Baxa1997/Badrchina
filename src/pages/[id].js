@@ -6,7 +6,8 @@ import SEO from 'seo'
 function Id() {
   const router = useRouter()
   const major = data.find((item) => item.slug === router.query.id)
-
+  console.log('major', major);
+  console.log('data', data);
   return (
     <div>
       <SEO />
