@@ -3,7 +3,8 @@ import styles from './gallery.module.scss';
 import Container from '@mui/material/Container';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import { makeStyles } from '@mui/styles';
-import GalleryImages from './GalleryImageContent/GalleryImage';
+import GalleryImages from './GalleryImageContent/GalleryImages';
+
 
 const useStyles = makeStyles({
     root: {
