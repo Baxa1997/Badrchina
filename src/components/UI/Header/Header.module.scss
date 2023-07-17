@@ -92,10 +92,10 @@
         color: #fff;
         margin-left: rem(26);
         padding: rem(8) rem(20);
-        background: #1b5bf7;
+        background: green;
         border-radius: rem(6);
         text-align: center;
-        padding: rem(9) rem(20);
+        // padding: rem(9) rem(20);
       }
     }
   }
@@ -185,7 +185,7 @@
       height: rem(44);
       margin-right: rem(16);
       border-radius: 50%;
-      background-color: #1b5bf7;
+      background-color: green;
     }
 
     &_number {
@@ -201,13 +201,13 @@
   font-size: 30px;
   line-height: 24px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #1b5bf7;
+  color: green;
 }
 .logoSecond {
   font-size: 30px;
   line-height: 24px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #1b5bf7; 
+  color: green; 
 }
 .desktop_contact {
   display: flex;

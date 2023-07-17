@@ -15,7 +15,8 @@ function Banner() {
       <Container className='container'>
         <div className={styles.banner_content}>
           <div className={styles.banner_text}>
-              <span>BADR CHINA</span>- Company  Travel!
+              <span>BADR CHINA</span>
+              <p>Travel Agency Company</p>
           </div>
         <div className={styles.bannerImages}>
         <div className={styles.banner_img1}>

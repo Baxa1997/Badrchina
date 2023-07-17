@@ -55,16 +55,16 @@ export function Footer() {
             </Link>
           </div>
           <div className={styles.footer_socials}>
-            <a href='https://instagram.com/mhisrgsii?igshid=MzNlNGNkZWQ4Mg=='>
+            <a className={styles.socialIcons} href='https://instagram.com/mhisrgsii?igshid=MzNlNGNkZWQ4Mg=='>
               <InstagramIcon />
             </a>
-            <a href=''>
+            <a className={styles.socialIcons} href='https://www.facebook.com/profile.php?id=100093916926996&mibextid=ZbWKwL'>
               <FacebookIcon />
             </a>
-            <a href='https://t.me/badrchina'>
+            <a className={styles.socialIcons} href='https://t.me/badrchina'>
               <TelegramIcon />
             </a>
-            <a href=''>
+            <a className={styles.socialIcons} href='https://youtube.com/@badrchina'>
               <YouTubeIcon />
             </a>
             <a href=''>
@@ -73,7 +73,7 @@ export function Footer() {
           </div>
           <div className={styles.footer_contacts_container}>
             <div className={styles.footer_contacts_item}>
-              <h4>+998 99 577 50 45</h4>
+              <h4>+998 93 577 50 45</h4>
               <p>Contacts</p>
             </div>
             <div className={styles.footer_contacts_item}>

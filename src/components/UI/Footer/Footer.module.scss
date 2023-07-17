@@ -87,6 +87,7 @@
 
   &_socials {
     display: flex;
+    align-items: center;
     // align-items: center;
 
     a {
@@ -151,13 +152,13 @@
   font-size: 30px;
   line-height: 24px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #1b5bf7;
+  color: green;
 }
 .logoSecond {
   font-size: 30px;
   line-height: 24px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #1b5bf7; 
+  color: green; 
 }
 .desktop_contact {
   display: flex;
