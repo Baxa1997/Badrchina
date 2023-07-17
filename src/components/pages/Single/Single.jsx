@@ -18,6 +18,7 @@ import Gallery from '../Gallery/Gallery'
 import GalleryKhiva from '../GalleryKhiva/GalleryKhiva'
 import GallerySamar from '../GallerySamar/GallerySamar'
 import GalleryBukhara from '../GalleryBukhara/GalleryBukhara'
+import Services from '../Services/Services'
 
 function Single({ major }) {
   const router = useRouter()
@@ -60,6 +61,7 @@ function Single({ major }) {
      {router.query.id === 'khiva' && <GalleryKhiva />}
      {router.query.id === 'samarqand' && <GallerySamar />}
      {router.query.id === 'bukhara' && <GalleryBukhara />}
+     {router.query.id === 'services' && <Services />}
       
     </>
   )

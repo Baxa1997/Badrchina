@@ -35,7 +35,7 @@ export function Footer() {
             </Link>
           </div> */}
           <div className={styles.footer_links}>
-            <Link href=''>
+            <Link href='/services'>
               <a>
                Biz Haqimizda
                 {/* All courses */}
