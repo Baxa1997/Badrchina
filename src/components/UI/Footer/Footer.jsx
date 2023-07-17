@@ -68,7 +68,7 @@ export function Footer() {
           <div className={styles.footer_contacts_container}>
             <div className={styles.footer_contacts_item}>
               <h4>+998 93 577 50 45</h4>
-              <h4>+998 99 965 02 98</h4>
+              <h4>+998 99 650 27 98</h4>
               <p>Contacts</p>
             </div>
             <div className={styles.footer_contacts_item}>

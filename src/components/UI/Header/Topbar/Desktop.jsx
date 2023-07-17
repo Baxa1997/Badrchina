@@ -41,7 +41,7 @@ function Desktop() {
               <PhoneIcon />
               <span>+998 (93) 577-50-45</span>
             </a>
-            <a href='tel:+998 (99) 965 02 98'>
+            <a href='tel:+998 (99) 650 27 98'>
               <PhoneIcon />
               <span>+998 (99) 650 27 98</span>
             </a>
