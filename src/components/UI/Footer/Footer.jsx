@@ -47,12 +47,6 @@ export function Footer() {
                 {/* Feedbacks */}
               </a>
             </Link>
-            <Link href='/#numbers'>
-              <a>
-                Biz haqimizda
-                {/* About us */}
-              </a>
-            </Link>
           </div>
           <div className={styles.footer_socials}>
             <a className={styles.socialIcons} href='https://instagram.com/mhisrgsii?igshid=MzNlNGNkZWQ4Mg=='>
